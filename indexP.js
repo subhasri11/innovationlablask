@@ -1,0 +1,10 @@
+const op = prompt("Enter operator (+, -, *, /):");
+const num1 = parseFloat(prompt("Enter first number:"));
+const num2 = parseFloat(prompt("Enter second number:"));
+let result;
+if (op === "+") result = num1 + num2;
+else if (op === "-") result = num1 - num2;
+else if (op === "*") result = num1 * num2;
+else if (op === "/") result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+else result = "Invalid operator";
+console.log(result);
